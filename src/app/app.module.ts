@@ -11,6 +11,7 @@ import { HeatMapChartComponent } from './heat-map-chart/heat-map-chart.component
 import { GaugeChartComponent } from './gauge-chart/gauge-chart.component';
 import { PolarRadarChartComponent } from './polar-radar-chart/polar-radar-chart.component';
 import { LinearGaugeChartComponent } from './linear-gauge-chart/linear-gauge-chart.component';
+import { NumberCardChartComponent } from './number-card-chart/number-card-chart.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { LinearGaugeChartComponent } from './linear-gauge-chart/linear-gauge-cha
     HeatMapChartComponent,
     GaugeChartComponent,
     PolarRadarChartComponent,
-    LinearGaugeChartComponent
+    LinearGaugeChartComponent,
+    NumberCardChartComponent
   ],
   imports: [
     BrowserModule,
