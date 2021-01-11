@@ -1,10 +1,10 @@
 <table>
     <tr>
         <td>
-            <div>normalized horizontal bar chart</div>
-            <ngx-charts-bar-horizontal-normalized [view]="view" [scheme]="colorScheme" [results]="multi" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+            <div>vertical bar chart</div>
+            <ngx-charts-bar-vertical [view]="view" [scheme]="colorScheme" [results]="single" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
                 [yAxisLabel]="yAxisLabel" (select)="onSelect($event)">
-            </ngx-charts-bar-horizontal-normalized>
+            </ngx-charts-bar-vertical>
         </td>
     </tr>
     <tr>
@@ -17,34 +17,10 @@
     </tr>
     <tr>
         <td>
-            <div>vertical bar chart</div>
-            <ngx-charts-bar-vertical [view]="view" [scheme]="colorScheme" [results]="single" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
-                [yAxisLabel]="yAxisLabel" (select)="onSelect($event)">
-            </ngx-charts-bar-vertical>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div>grouped horizontal bar chart</div>
-            <ngx-charts-bar-horizontal-2d [view]="view" [scheme]="colorScheme" [schemeType]="schemeType" [results]="multi" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [legendPosition]="legendPosition" [showXAxisLabel]="showXAxisLabel"
-                [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
-            </ngx-charts-bar-horizontal-2d>
-        </td>
-    </tr>
-    <tr>
-        <td>
             <div>normalized vertical bar chart</div>
             <ngx-charts-bar-vertical-normalized [view]="view" [scheme]="colorScheme" [results]="multi" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
                 [yAxisLabel]="yAxisLabel" (select)="onSelect($event)">
             </ngx-charts-bar-vertical-normalized>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div>stacked horizontal bar chart</div>
-            <ngx-charts-bar-horizontal-stacked [view]="view" [scheme]="colorScheme" [results]="multi" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
-                [yAxisLabel]="yAxisLabel" (select)="onSelect($event)">
-            </ngx-charts-bar-horizontal-stacked>
         </td>
     </tr>
     <tr>
@@ -61,6 +37,30 @@
             <ngx-charts-bar-horizontal [view]="view" [scheme]="colorScheme" [results]="single" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
                 [yAxisLabel]="yAxisLabel" (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
             </ngx-charts-bar-horizontal>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>stacked horizontal bar chart</div>
+            <ngx-charts-bar-horizontal-stacked [view]="view" [scheme]="colorScheme" [results]="multi" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+                [yAxisLabel]="yAxisLabel" (select)="onSelect($event)">
+            </ngx-charts-bar-horizontal-stacked>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>normalized horizontal bar chart</div>
+            <ngx-charts-bar-horizontal-normalized [view]="view" [scheme]="colorScheme" [results]="multi" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+                [yAxisLabel]="yAxisLabel" (select)="onSelect($event)">
+            </ngx-charts-bar-horizontal-normalized>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>grouped horizontal bar chart</div>
+            <ngx-charts-bar-horizontal-2d [view]="view" [scheme]="colorScheme" [schemeType]="schemeType" [results]="multi" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [legendPosition]="legendPosition" [showXAxisLabel]="showXAxisLabel"
+                [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+            </ngx-charts-bar-horizontal-2d>
         </td>
     </tr>
 </table>
