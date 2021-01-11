@@ -10,6 +10,7 @@ import { PieChartsComponent } from './pie-charts/pie-charts.component';
 import { HeatMapChartComponent } from './heat-map-chart/heat-map-chart.component';
 import { GaugeChartComponent } from './gauge-chart/gauge-chart.component';
 import { PolarRadarChartComponent } from './polar-radar-chart/polar-radar-chart.component';
+import { LinearGaugeChartComponent } from './linear-gauge-chart/linear-gauge-chart.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PolarRadarChartComponent } from './polar-radar-chart/polar-radar-chart.
     PieChartsComponent,
     HeatMapChartComponent,
     GaugeChartComponent,
-    PolarRadarChartComponent
+    PolarRadarChartComponent,
+    LinearGaugeChartComponent
   ],
   imports: [
     BrowserModule,
