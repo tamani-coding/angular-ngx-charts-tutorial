@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BarChartsComponent } from './bar-charts/bar-charts.component';
 import { PieChartsComponent } from './pie-charts/pie-charts.component';
+import { HeatMapChartComponent } from './heat-map-chart/heat-map-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LineAreaChartsComponent,
     BarChartsComponent,
-    PieChartsComponent
+    PieChartsComponent,
+    HeatMapChartComponent
   ],
   imports: [
     BrowserModule,
