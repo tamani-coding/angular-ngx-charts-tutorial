@@ -1,0 +1,34 @@
+<table>
+    <tr>
+        <td>
+            <div>stacked area chart</div>
+            <ngx-charts-area-chart-stacked [view]="view" [scheme]="colorScheme" [legend]="legend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline"
+                [results]="multi" (select)="onSelect($event)">
+            </ngx-charts-area-chart-stacked>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>area chart</div>
+            <ngx-charts-area-chart [view]="view" [scheme]="colorScheme" [legend]="legend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline"
+                [results]="multi" (select)="onSelect($event)">
+            </ngx-charts-area-chart>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>normalized area chart</div>
+            <ngx-charts-area-chart-normalized [view]="view" [scheme]="colorScheme" [legend]="legend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline"
+                [results]="multi" (select)="onSelect($event)">
+            </ngx-charts-area-chart-normalized>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>line chart</div>
+            <ngx-charts-line-chart [view]="view" [scheme]="colorScheme" [legend]="legend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline"
+                [results]="multi" (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+            </ngx-charts-line-chart>
+        </td>
+    </tr>
+</table>
