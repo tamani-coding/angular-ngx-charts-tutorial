@@ -6,12 +6,14 @@ import { LineAreaChartsComponent } from './line-area-charts/line-area-charts.com
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BarChartsComponent } from './bar-charts/bar-charts.component';
+import { PieChartsComponent } from './pie-charts/pie-charts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LineAreaChartsComponent,
-    BarChartsComponent
+    BarChartsComponent,
+    PieChartsComponent
   ],
   imports: [
     BrowserModule,
