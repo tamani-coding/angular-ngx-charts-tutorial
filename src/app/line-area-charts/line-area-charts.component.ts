@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { multi } from '../data/line-chart-data';
+import { multi } from '../data/countries';
 
 @Component({
   selector: 'app-line-area-charts',
@@ -12,27 +12,35 @@ export class LineAreaChartsComponent implements OnInit {
     Object.assign(this, { multi });
   }
 
-  public multi: any[];
-  public view: any[] = [700, 300];
+  multi: any[];
+  view: any[] = [700, 300];
 
   // options
-  public legend: boolean = true;
-  public showLabels: boolean = true;
-  public animations: boolean = true;
-  public xAxis: boolean = true;
-  public yAxis: boolean = true;
-  public showYAxisLabel: boolean = true;
-  public showXAxisLabel: boolean = true;
-  public xAxisLabel: string = 'Year';
-  public yAxisLabel: string = 'Population';
-  public timeline: boolean = true;
+  legend: boolean = true;
+  showLabels: boolean = true;
+  animations: boolean = true;
+  xAxis: boolean = true;
+  yAxis: boolean = true;
+  showYAxisLabel: boolean = true;
+  showXAxisLabel: boolean = true;
+  xAxisLabel: string = 'Year';
+  yAxisLabel: string = 'Population';
+  timeline: boolean = true;
 
-  public colorScheme = {
+  colorScheme = {
     domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5']
   };
 
-  public onSelect(event) {
+  onSelect(event) {
     console.log(event);
+  }
+
+  onActivate(data): void {
+    console.log('Activate', JSON.parse(JSON.stringify(data)));
+  }
+
+  onDeactivate(data): void {
+    console.log('Deactivate', JSON.parse(JSON.stringify(data)));
   }
 
   ngOnInit(): void {
