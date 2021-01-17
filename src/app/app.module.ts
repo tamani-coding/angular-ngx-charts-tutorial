@@ -14,6 +14,7 @@ import { LinearGaugeChartComponent } from './linear-gauge-chart/linear-gauge-cha
 import { NumberCardChartComponent } from './number-card-chart/number-card-chart.component';
 import { TreeMapChartComponent } from './tree-map-chart/tree-map-chart.component';
 import { BubbleChartComponent } from './bubble-chart/bubble-chart.component';
+import { ProductBarChartsComponent } from './product-bar-charts/product-bar-charts.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BubbleChartComponent } from './bubble-chart/bubble-chart.component';
     LinearGaugeChartComponent,
     NumberCardChartComponent,
     TreeMapChartComponent,
-    BubbleChartComponent
+    BubbleChartComponent,
+    ProductBarChartsComponent
   ],
   imports: [
     BrowserModule,
