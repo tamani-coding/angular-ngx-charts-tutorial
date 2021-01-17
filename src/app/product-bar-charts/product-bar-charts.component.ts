@@ -14,7 +14,8 @@ export class ProductBarChartsComponent implements OnInit {
   view: any[] = [700, 370];
 
   // options
-  legendTitle: string = 'Videogame Genres';
+  legendTitle: string = 'Products';
+  legendTitleMulti: string = 'Months';
   legendPosition: string = 'below'; // ['right', 'below']
   legend: boolean = true;
 
@@ -22,7 +23,7 @@ export class ProductBarChartsComponent implements OnInit {
   yAxis: boolean = true;
 
   yAxisLabel: string = 'Sales';
-  xAxisLabel: string = 'Genre';
+  xAxisLabel: string = 'Products';
   showXAxisLabel: boolean = true;
   showYAxisLabel: boolean = true;
 
@@ -35,12 +36,11 @@ export class ProductBarChartsComponent implements OnInit {
   xAxisTicks: any[] = ['Genre 1', 'Genre 2', 'Genre 3', 'Genre 4', 'Genre 5', 'Genre 6', 'Genre 7']
   yAxisTicks: any[] = [100, 1000, 2000, 5000, 7000, 10000]
 
-  animations: boolean = true;
+  animations: boolean = true; // animations on load
 
-  showGridLines: boolean = true;
-  roundDomains: boolean = true;
+  showGridLines: boolean = true; // grid lines
 
-  showDataLabel: boolean = true;
+  showDataLabel: boolean = true; // numbers on bars
 
   gradient: boolean = false;
   colorScheme = {
@@ -48,13 +48,8 @@ export class ProductBarChartsComponent implements OnInit {
   };
   schemeType: string = 'ordinal'; // 'ordinal' or 'linear'
 
-  customColors = [
-    { "name": "Strategy", "value": "#AAAAAA" },
-    { "name": "Shooter", "value": "#AAAAAA" }
-  ]
-
   activeEntries: any[] = ['book']
-  barPadding: number = 2
+  barPadding: number = 5
   tooltipDisabled: boolean = false;
 
   yScaleMax: number = 9000;
