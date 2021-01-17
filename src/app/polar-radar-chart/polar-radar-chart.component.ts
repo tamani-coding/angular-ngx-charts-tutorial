@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { multi } from '../data/countries';
+import { productSalesMulti } from '../data/products';
 
 @Component({
   selector: 'app-polar-radar-chart',
@@ -7,7 +7,7 @@ import { multi } from '../data/countries';
   styleUrls: ['./polar-radar-chart.component.css']
 })
 export class PolarRadarChartComponent implements OnInit {
-  multi: any[];
+  productSalesMulti: any[];
   view: any[] = [700, 300];
 
   // options
@@ -26,7 +26,7 @@ export class PolarRadarChartComponent implements OnInit {
   };
 
   constructor() {
-    Object.assign(this, { multi });
+    Object.assign(this, { productSalesMulti });
   }
 
   onSelect(event) {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { multi } from '../data/countries';
+import { productSalesMulti } from '../data/products';
 
 @Component({
   selector: 'app-heat-map-chart',
@@ -8,7 +8,7 @@ import { multi } from '../data/countries';
 })
 export class HeatMapChartComponent implements OnInit {
 
-  multi: any[];
+  productSalesMulti: any[];
   view: any[] = [700, 300];
 
   // options
@@ -19,15 +19,15 @@ export class HeatMapChartComponent implements OnInit {
   yAxis: boolean = true;
   showYAxisLabel: boolean = true;
   showXAxisLabel: boolean = true;
-  xAxisLabel: string = 'Country';
-  yAxisLabel: string = 'Year';
+  xAxisLabel: string = 'product';
+  yAxisLabel: string = 'sales';
 
   colorScheme = {
-    domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5']
+    domain: ['#fc88ab', '#fc6d98', '#ff477f', '#ff3371', '#ff2165', '#ff004e']
   };
 
   constructor() {
-    Object.assign(this, { multi });
+    Object.assign(this, { productSalesMulti });
   }
 
   onSelect(data): void {

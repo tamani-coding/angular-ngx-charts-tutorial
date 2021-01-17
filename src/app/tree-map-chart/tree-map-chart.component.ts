@@ -1,5 +1,5 @@
+import { productSales } from './../data/products';
 import { Component, OnInit } from '@angular/core';
-import { single } from '../data/countries';
 
 @Component({
   selector: 'app-tree-map-chart',
@@ -8,7 +8,7 @@ import { single } from '../data/countries';
 })
 export class TreeMapChartComponent implements OnInit {
 
-  single: any[];
+  productSales: any[];
   view: any[] = [700, 400];
 
   // options
@@ -20,7 +20,7 @@ export class TreeMapChartComponent implements OnInit {
   };
 
   constructor() {
-    Object.assign(this, { single });
+    Object.assign(this, { productSales });
   }
 
   onSelect(event) {

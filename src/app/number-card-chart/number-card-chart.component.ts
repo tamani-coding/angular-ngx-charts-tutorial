@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { single } from '../data/countries'
+import { productSales } from '../data/products'
 
 @Component({
   selector: 'app-number-card-chart',
@@ -8,16 +8,16 @@ import { single } from '../data/countries'
 })
 export class NumberCardChartComponent implements OnInit {
 
-  single: any[];
+  productSales: any[];
   view: any[] = [700, 400];
 
   colorScheme = {
     domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5']
   };
-  cardColor: string = '#232837';
-  
+  cardColor: string = '#deaff0';
+
   constructor() {
-    Object.assign(this, { single });
+    Object.assign(this, { productSales });
   }
 
   onSelect(event) {

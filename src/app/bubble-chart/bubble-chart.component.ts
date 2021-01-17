@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { bubbleData } from '../data/countries';
+import { bubbleData } from '../data/products';
 
 @Component({
   selector: 'app-bubble-chart',
@@ -17,9 +17,9 @@ export class BubbleChartComponent implements OnInit {
   gradient: boolean = false;
   showLegend: boolean = true;
   showXAxisLabel: boolean = true;
-  yAxisLabel: string = 'Population';
+  yAxisLabel: string = 'Sales';
   showYAxisLabel: boolean = true;
-  xAxisLabel: string = 'Years';
+  xAxisLabel: string = 'Months';
   maxRadius: number = 20;
   minRadius: number = 5;
   yScaleMin: number = 70;

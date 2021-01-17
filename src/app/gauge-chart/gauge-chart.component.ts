@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { single } from '../data/countries'
+import { productSales } from '../data/products'
 
 @Component({
   selector: 'app-gauge-chart',
@@ -8,7 +8,7 @@ import { single } from '../data/countries'
 })
 export class GaugeChartComponent implements OnInit {
 
-  single: any[];
+  productSales: any[];
   view: any[] = [500, 400];
   legend: boolean = true;
   legendPosition: string = 'below';
@@ -18,7 +18,7 @@ export class GaugeChartComponent implements OnInit {
   };
 
   constructor() {
-    Object.assign(this, { single });
+    Object.assign(this, { productSales });
   }
 
   onSelect(data): void {
