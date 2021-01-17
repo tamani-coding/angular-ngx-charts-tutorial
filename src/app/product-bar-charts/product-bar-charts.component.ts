@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { productSales } from '../data/products'
+import { productSales, productSalesMulti } from '../data/products'
 
 @Component({
   selector: 'app-product-bar-charts',
@@ -9,6 +9,7 @@ import { productSales } from '../data/products'
 export class ProductBarChartsComponent implements OnInit {
 
   productSales: any[]
+  productSalesMulti: any[]
 
   view: any[] = [700, 370];
 
@@ -60,7 +61,7 @@ export class ProductBarChartsComponent implements OnInit {
 
   roundEdges: boolean = false;
 
-  constructor() { Object.assign(this, { productSales }); }
+  constructor() { Object.assign(this, { productSales, productSalesMulti }); }
 
   ngOnInit(): void {
   }
