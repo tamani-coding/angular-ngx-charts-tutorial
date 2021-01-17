@@ -18,8 +18,8 @@ export class PolarRadarChartComponent implements OnInit {
   yAxis: boolean = true;
   showYAxisLabel: boolean = true;
   showXAxisLabel: boolean = true;
-  xAxisLabel: string = 'Year';
-  yAxisLabel: string = 'Population';
+  xAxisLabel: string = 'Products';
+  yAxisLabel: string = 'Sales';
 
   colorScheme = {
     domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5']

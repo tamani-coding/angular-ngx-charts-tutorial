@@ -28,7 +28,7 @@ export class TreeMapChartComponent implements OnInit {
   }
 
   labelFormatting(c) {
-    return `${(c.label)} Population`;
+    return `${(c.label)} Sales`;
   }
 
   ngOnInit(): void {
