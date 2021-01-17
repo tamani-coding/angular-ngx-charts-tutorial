@@ -15,6 +15,7 @@ import { NumberCardChartComponent } from './number-card-chart/number-card-chart.
 import { TreeMapChartComponent } from './tree-map-chart/tree-map-chart.component';
 import { BubbleChartComponent } from './bubble-chart/bubble-chart.component';
 import { ProductBarChartsComponent } from './product-bar-charts/product-bar-charts.component';
+import { ProductPieChartsComponent } from './product-pie-charts/product-pie-charts.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ProductBarChartsComponent } from './product-bar-charts/product-bar-char
     NumberCardChartComponent,
     TreeMapChartComponent,
     BubbleChartComponent,
-    ProductBarChartsComponent
+    ProductBarChartsComponent,
+    ProductPieChartsComponent
   ],
   imports: [
     BrowserModule,
